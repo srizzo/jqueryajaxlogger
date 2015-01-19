@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    <p>
+      1 - Open the Javascript Console to see the output.
+    </p>
+    <p>
+      2 - Activate the <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://rawgit.com/srizzo/jqueryajaxlogger/master/dist/jqueryajaxlogger.min.js';})();">jQuery Ajax Logger Bookmarklet</a>
+    </p>
+    <p>
+      3 - <button>Click me!</button>
+    </p>
+    <p id="ajax-result">
+    </p>
+    <script src="../external/jquery/jquery-2.1.3.js"></script>
+    <script>
+      $(function () {
+        $('button').on('click', function () {
+          $.get('./ajax-result.html', function (response) {
+            $('#ajax-result').html(response)
+          })
+        })
+      })
+    </script>
+  </body>
+</html>

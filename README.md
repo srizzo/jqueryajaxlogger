@@ -9,7 +9,7 @@ It makes it easy to trace back what files and functions are triggering what ajax
 
 Create a bookmarklet with the following content:
 
-    javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://rawgit.com/srizzo/jqueryajaxlogger/master/dist/jqueryajaxlogger.min.js';})();
+    javascript:(function(){document.body.appendChild(document.createElement('script')).src='//rawgit.com/srizzo/jqueryajaxlogger/master/dist/jqueryajaxlogger.min.js';})();
 
 Activate the bookmarklet, open the Javascript Console and interact with your page.
 
